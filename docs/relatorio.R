@@ -1,0 +1,4 @@
+# Resultado: dados de queimada de agosto foram superiores ao esperado
+# pelo modelo ETS, porem os meses subsequentes foram dentro do 
+# esperado pelo padrão dos anos anteriores. Em 2020, até abril, os 
+# dados também foram dentro do esperado .

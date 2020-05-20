@@ -15,7 +15,7 @@ data <- data_raw %>% filter(!is.na(mes)) %>%  # retirar linhas de total anual
   mutate(ano = as.double(ano), # converter ano em double
          presidente = presidentes, # add coluna dos presidentes
          date = zoo::as.yearmon(paste(ano, mes, sep = "-"))) %>%  # coluna mes-ano
-  filter(!is.na(amazonia)) 
+  filter(!is.na(amazonia)) # retirar dados faltantes da amazonia
 
 # Salvar dados usados
 write_csv2(data, "data/dados.csv")
@@ -56,8 +56,8 @@ autoplot(teste_amazonia)+
   autolayer(a.fcast.arima$mean)+
   autolayer(a.fcast.ets$mean)
 
-# Modelo escolhido foi o modelo ets por conta do RMSE, MAE eMAPE 
-# menor e do melhor desempenho na inspeção visual
+# Modelo escolhido foi o modelo ETS por conta do RMSE, MAE e MAPE 
+# menor, e do melhor desempenho na inspeção visual
 
 
 
@@ -90,11 +90,6 @@ autoplot(amazonia_ts_bolsonaro)+
   zoo::scale_x_yearmon(n = 5)
 
 # Salvar grafico
-ggsave("data/ts.tiff")
 ggsave("data/ts.jpg")
 
-# Resultado: dados de queimada de agosto foram superiores ao esperado
-# pelo modelo ETS, porem os meses subsequentes foram dentro do 
-# esperado pelo padrão dos anos anteriores. Em 2020, até abril, os 
-# dados também foram dentro do esperado .
- 
+# Resultados e relatorio em "docs/relatorio.R"
