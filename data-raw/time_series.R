@@ -91,7 +91,7 @@ autoplot(amazonia_ts_bolsonaro)+
 
 # Salvar grafico
 ggsave("data/ts.tiff")
-ggsave("data/ts.jpeg")
+ggsave("data/ts.jpg")
 
 # Resultado: dados de queimada de agosto foram superiores ao esperado
 # pelo modelo ETS, porem os meses subsequentes foram dentro do 
