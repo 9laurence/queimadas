@@ -5,7 +5,7 @@ Authors@R:
     person(given = "Paulo",
            family = "Laurence",
            role = c("aut", "cre"),
-Description: O objetivo do repositorio "queimadas" é conduzir uma análise sobre os dados das queimadas na amazônia de 2019. Para isso, foi conduzido um modelo ETS de séries temporais para averiguar se a quantidade de queimadas na época de agosto de 2019 foi acima do esperado, baseado nos anos passados, ou não.
+Description: O objetivo do repositorio "queimadas" foi conduzir uma análise sobre os dados das queimadas na amazônia de 2019. Para isso, foi conduzido um modelo ETS de séries temporais para averiguar se a quantidade de queimadas na época de agosto de 2019 foi acima do esperado, baseado nos anos passados, ou não.
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
