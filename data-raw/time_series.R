@@ -80,7 +80,7 @@ amazonia_ts_bolsonaro <- window(amazonia_ts, start = c(2019, 1))
 autoplot(amazonia_ts_bolsonaro)+
   geom_point()+
   geom_line(aes(color = 'Dado real'))+
-  autolayer(a.fcast.ets2$mean, series="Media")+
+  autolayer(a.fcast.ets2$mean, series="Media do modelo", linetype = "dashed")+
   autolayer(a.fcast.ets2$upper)+
   autolayer(a.fcast.ets2$lower)+
   ylab("Área queimada da Amazonia, em km^2")+
